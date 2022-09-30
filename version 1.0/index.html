@@ -5,93 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="message.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300;400;500;600;700&family=Splash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dycalendar.css">
 </head>
 <body>
-
-        <div class="container">
-            <div class="container1">
-                <div class="navbar">
-                    <div class="leftside">
-                        <a href="">My Tasks</a>
-                        <a href="">Events</a>
-                        <a href="">Academics</a>
-                        <a href="">Calender</a>
-                        <!-- <a href="">Teams</a> -->
-                    </div>
-        
-                    <div class="rightside">
-                        <div class="input1"><input type="text"><button><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </div>
-                        <div class="notify"><a href=""><i class="fa fa-bell" aria-hidden="true"></i></a></div>
-                        <div class="img"><a href=""><img src="dp_images_8-1279.jpg" alt=""></a></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container2">
-                <div class="child">
-                    <div class="year">
-                        <i class="fas fa-angle-left prev child1"></i>
-                        <div class="child1">
-                            <h1>2022</h1>
-                        </div>
-                        <i class="fas fa-angle-right next child1"></i>
-                    </div>
-            
-                    <div class="month">
-                    </div>
-                </div>
-            
-                <div class="child">
-                    <div class="weekdays">
-                    </div>
-            
-                    <div class="days">
-                    </div>
-                </div>
-            
-                <div class="child">
-                    <div class="message">
-                        <div class="message-nav">
-                            <!-- <button>Add +</button> -->
-                        </div>
-                        <div class="message-body">
-                             <div>
-                                  <h1>Events</h1>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> Hackton 2022-07-23</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> Codebreak</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> PersonaFest</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> Hackton</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> Codebreak</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> PersonaFest</h4>
-                             </div>
-
-                             <div> 
-                                <h1>Academics</h1> 
-                                <h4> <i class="fa fa-circle" aria-hidden="true"></i> Hackton</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> Codebreak</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> PersonaFest</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> Hackton</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> Codebreak</h4>
-                                  <h4> <i class="fa fa-circle" aria-hidden="true"></i> PersonaFest</h4>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            
-            </div>
-        </div>
-            
-        
+    
+    <div class="container">
+        <div id="dycalendar"></div>
+    </div>
+    <script src="dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target:'#dycalendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show',
+        })
+    </script>
 </body>
-<script src="script.js"></script>
-<script src="DateWeekMonthYear.js"></script> 
-<script src="message.js"></script>
 </html>

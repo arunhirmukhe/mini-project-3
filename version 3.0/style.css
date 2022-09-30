@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ html{
+     font-size: 62.5%;
+     
+ }
+ 
+ .container{
+     display: flex;
+     flex-direction: column;
+     width: 100vw;
+     height: 100vh;
+     background-color: #202125;
+     border-radius: 3rem;
+     color: #eee;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .container2{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    color: #eee;
+    border: 0.5rem solid #12121f;
+ }
+ 
+ .child:nth-child(1){
+     width: 20%;
+ }
+ .child:nth-child(2){
+    width: 57%;
+}
+
+ .child:nth-child(3){
+     background-color: #202125;
+     width: 23%;
+ }
+ .year{
+     width: 100%;
+     height: 9vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 2rem;
+     border: 0.1vh solid #202125;
+     border-radius: 3rem;
+ }
+ 
+ .month{
+    width: 100%;
+    height: 82.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #202125;
+    background-color: #12121f;
+ }
+ 
+ .month div{
+    width: 100%;
+    height: 6vh;
+ }
+
+ .child2{
+     width: 100%;
+     height: 10%;
+ }
+ 
+ .weekdays{
+     display: flex;
+     justify-content: space-around;
+     border: 0.1vh solid #202125;
+     height: 9vh;
+     background-color: #12121f;
+ }
+ 
+ .weekdays div{
+     width: 13%;
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 2.5rem;
+ }
+ 
+ .days{
+     width: 100%;
+     height: 82.8vh;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     background-color: #12121f;
+     border: 0.1vh solid #202125;
+ }
+ 
+ .days div{
+     width: 13%;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 4rem;
+ }
+ 
+ .message{
+     width: 100%;
+     height: 91.8vh;
+     background-color: #12121f;
+     border: 0.1vh solid #202125;
+ }
+
+ 
